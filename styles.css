@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: green;
+}
+header {
+  background-color: #80b9ec;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.6rem;
+}
+header h1 {
+  font-family: "Gill Sans";
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #fdfafa;
+  text-align: center;
+}
+
+#shoppingcart {
+  width: 1.8rem;
+  margin-right: 1rem;
+}
+
+button#cuenta {
+  background-color: #fdfafa;
+  border-radius: 14px;
+  border: 4px solid #d5d4d2;
+  font-family: "Gill Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5b5959;
+  width: 7rem;
+  height: 2rem;
+  padding: 0.2rem;
+  margin-left: 40%;
+}
+main {
+  background-image: url(strand-bw.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 300%;
+  position: relative;
+}
+input#small-search {
+  background-color: #fdfafa;
+  border-radius: 14px;
+  border: 3px solid #80b9ec;
+  padding: 0.3rem 0.5rem;
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 10rem;
+}
+
+#searching-sm {
+  position: absolute;
+  right: 12%;
+  top: 1rem;
+  width: 2rem;
+}
+#search {
+  position: absolute;
+  right: 12%;
+  top: -0.2rem;
+  width: 3rem;
+  border-radius: 20px;
+}
+
+section {
+  margin-left: 1.8rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+#heart {
+  position: absolute;
+  left: 38%;
+  top: 8%;
+}
+
+.books img {
+  width: 8rem;
+  height: 12rem;
+  margin: 1rem;
+  border: 3px solid #d5d4d2;
+}
+footer {
+  background-color: #80b9ec;
+}
+footer img {
+  width: 2rem;
+  margin: 0.5rem 0.6rem;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 360px) {
+  .container {
+    width: 360px;
+    height: 800px;
+    background-color: #faf7df;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 12% 1fr 6%;
+    grid-template-columns: 100%;
+  }
+  .nav-web {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 1280px;
+    height: 800px;
+    background-color: #faf7df;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 22% 1fr 12%;
+    grid-template-columns: 100%;
+  }
+  .books img {
+    width: 16rem;
+    height: 24rem;
+    margin: 1rem;
+    border: 3px solid #d5d4d2;
+  }
+  main {
+    background-size: 140%;
+  }
+  header h1 {
+    font-size: 5em;
+    position: absolute;
+    left: 25%;
+    top: 3rem;
+  }
+  .fix-h1 {
+    position: relative;
+  }
+
+  footer img {
+    width: 3rem;
+    margin: 1rem 1rem;
+  }
+  #heart {
+    position: absolute;
+    left: 21%;
+    top: 13%;
+  }
+  #menu {
+    display: none;
+  }
+
+  .header-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 2rem;
+    margin-top: 0px;
+    position: relative;
+  }
+  #shoppingcart {
+    position: absolute;
+    width: 3rem;
+    right: 3rem;
+    top: 4.7rem;
+  }
+  button#cuenta {
+    position: absolute;
+    background-color: #fdfafa;
+    border-radius: 14px;
+    border: 4px solid #d5d4d2;
+    font-family: "Gill Sans";
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #5b5959;
+    width: 9rem;
+    height: 3rem;
+    padding: 1px;
+    top: 5rem;
+    right: 10rem;
+  }
+  .nav-web {
+    display: contents;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: #5b5959;
+    font-size: 2.4rem;
+    margin-top: 10%;
+  }
+  .nav-web li {
+    padding: 1rem 2.5rem;
+    margin-top: 20px;
+  }
+  input#search {
+    background-color: #fdfafa;
+    border-radius: 40px;
+    border: 5px solid #80b9ec;
+    padding: 1.5rem 11rem;
+    position: relative;
+    color: black;
+  }
+  #small-search,
+  #small-search.input.img {
+    display: none;
+  }
+  #searching {
+    position: absolute;
+    right: 10%;
+    width: 3.5rem;
+  }
+  #searching-sm {
+    display: none;
+  }
+}
